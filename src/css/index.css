@@ -1,0 +1,43 @@
+body {
+    height: 100%;
+    width: 100%;
+    /* background: #3c41c6; */
+    background: #fd79a8;
+    /* background-image: url('../img/bg.png'); */
+    background-image: url('../img/star-opacuty.png');
+}
+
+.app {
+    position: relative;
+}
+nav {
+    display: grid;
+    justify-items: center;
+}
+main {
+    display: grid;
+    justify-items: center;
+}
+
+.Modal {
+    top:0px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.logTxt {
+    width: 1024px;
+    height: 65px;
+    font-family: 'Barlow', sans-serif;
+    display: grid;
+    align-items: center;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+}
