@@ -9,18 +9,39 @@ body {
 
 .app {
     position: relative;
+    display: grid;
+    justify-items: center;
 }
 nav {
     display: grid;
     justify-items: center;
+    padding: 20px;
 }
 main {
     display: grid;
     justify-items: center;
+    min-height: 700px;
+    width: 1024px;
+}
+.photoWrap {
+    width: 100%;
+    height: 27vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.photoCard {
+    width: 300px;
+    height: 100%;
+    background: #ffffff;
+    border-radius: 10px;
 }
 
 .Modal {
     top:0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
     height: 100%;
     width: 100%;
     position: absolute;
@@ -33,11 +54,27 @@ main {
 
 .logTxt {
     width: 1024px;
-    height: 65px;
+    height: 100%;
     font-family: 'Barlow', sans-serif;
     display: grid;
     align-items: center;
     color: #ffffff;
     font-size: 24px;
     font-weight: 700;
+}
+
+
+footer {
+    height: 300px;
+    width: 100%;
+    display: grid;
+    background-color: rgba(0, 0, 0, 0.5);   
+}
+
+.displayNone {
+    display: none;
+}
+
+.displayBlock {
+    display: block;
 }
