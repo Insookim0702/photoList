@@ -6,6 +6,8 @@ function handleClickPhotoAlbum(event) {
 }
 
 function init() {
+    if ('1' === '1') {
+    }
     photoCard.addEventListener('click', handleClickPhotoAlbum);
 }
 

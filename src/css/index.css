@@ -1,40 +1,61 @@
+html {
+    font-size: 14px;
+}
+
 body {
-    height: 100%;
     width: 100%;
+    min-width: 333px;
+    margin: 0;
+    padding: 0px;
     /* background: #3c41c6; */
     background: #fd79a8;
     /* background-image: url('../img/bg.png'); */
     background-image: url('../img/star-opacuty.png');
 }
 
-.app {
-    position: relative;
-    display: grid;
-    justify-items: center;
-}
 nav {
+    margin: 10px auto;
+    /* padding: 10px; */
     display: grid;
-    justify-items: center;
-    padding: 20px;
+    max-width: 1024px;
+    grid-template-columns: repeat(2, 1fr);
+    /* justify-items: center; */
 }
+
 main {
+    margin: 20px auto;
+    overflow: auto;
     display: grid;
     justify-items: center;
-    min-height: 700px;
-    width: 1024px;
+    min-height: 90vh;
+    max-width: 1024px;
+    /* width: 100%; */
 }
+
 .photoWrap {
     width: 100%;
     height: 27vh;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    /* justify-content: space-between; */
 }
 
 .photoCard {
-    width: 300px;
+    width: 100%;
     height: 100%;
+    min-height: 220px;
     background: #ffffff;
     border-radius: 10px;
+}
+
+.photo-area {
+    display: grid;
+    justify-items: center;
+    border-radius: 10px;
+    padding: 10px;
+    /* width: 100%; */
+    height: 80%;
+    background-color: #81ecec;
 }
 
 .Modal {
@@ -52,8 +73,7 @@ main {
     z-index: 1;
 }
 
-.logTxt {
-    width: 1024px;
+.logoTxt {
     height: 100%;
     font-family: 'Barlow', sans-serif;
     display: grid;
@@ -63,13 +83,43 @@ main {
     font-weight: 700;
 }
 
-footer {
-    height: 300px;
-    width: 100%;
+.nav-user {
+    height: 100%;
+    font-family: 'Barlow', sans-serif;
     display: grid;
-    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-items: end;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    background: #222f3e;
+    color: aliceblue;
+}
+
+@media (min-width: 900px) {
+    .photoWrap {
+        width: 100%;
+        height: 27vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .photoCard {
+        width: 300px;
+        height: 100%;
+        min-height: 220px;
+        background: #ffffff;
+        border-radius: 10px;
+    }
+}
 .displayNone {
     display: none;
 }
